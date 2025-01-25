@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: mynginx-container
-          image: raju9542/kingkhan18:latest
+          image: nginx
           ports:
             - containerPort: 8080
