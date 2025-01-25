@@ -13,5 +13,3 @@ spec:
     app: myjavaapp
   ports:
   - port: 8080
-    nodePort: 30001
-    protocol: TCP
