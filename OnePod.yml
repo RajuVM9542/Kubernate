@@ -1,0 +1,12 @@
+apiVersion: v2
+kind: Pod 
+
+metadata:
+ name: one-pod
+ 
+spec:
+ containers:
+  - name: first-container
+    image: nginx
+    ports:
+    - containerPort: 80
