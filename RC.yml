@@ -3,6 +3,7 @@ kind: ReplicationController
 
 metadata:
   name: myrc 
+  namespace: onerc
 
 spec:
   replicas: 3
