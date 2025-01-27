@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: firstPod
+ namespace: first
+
+spec:
+  containers:
+    - name: firstnew-container
+      image: raju9542/kingkhan18
+      ports:
+      - containerPort: 80
