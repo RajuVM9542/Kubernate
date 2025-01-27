@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ReplicationController
+
+metadata:
+  name: myrc 
+
+spec:
+  replicas: 3
+  selector:
+    app: myrc
+
+  template:
+    metadata:
+      name: myrc
+      labels:
+        app: myrc
+
+    spec:
+      containers:
+        - name: myrc-container
+          image: nginx
+          ports:
+            - containerPort: 80
