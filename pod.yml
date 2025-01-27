@@ -6,6 +6,6 @@ metadata:
 spec:
   containers:
     - name: firstnew-container
-      image: raju9542/kingkhan18
+      image: nginx
       ports:
       - containerPort: 80
