@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: myappdeployment
+  labels:
+    app: myjavaapp
+
+spec:
+  selector:
+    matchLabels:
+      app: myjavaapp
+
+  template:
+    metadata:
+      labels:
+        app: myjavaapp
+
+
+    spec:
+      containers:
+      - name: myjavaappcontainer
+        image: maha4iac/mahalogin:1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
